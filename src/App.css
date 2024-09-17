@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  height: 100vh;
+  width: 100%;
+}
+
+.main-layout-wrapper {
+  height: 640px;
+  min-width: 1400px;
+  border-radius: 20px;
+  background-color: red;
+}
+
+.brand-layout-wrapper {
+  background-color: yellow;
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 13rem;
+  padding: 0.5rem;
+  position: relative;
+}
+.brand-content-layout{
+  max-width: 9.5rem;
+  word-wrap: break-word;
+}
+.brand-content-layout p{
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+}
+.brand-list-layout{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 0px 0.5rem;
+}
+.brand_child_1{ 
+  padding: 0px 0.5rem;
+}
+.brand_child_2{ 
+  padding: 0px 0.5rem;
+}
+.brand-play-button{
+  position: absolute;
+  display: flex;
+  bottom: 0.25rem;
+
+  width: 10rem;
+  align-items: center;
+}
+
+.brand-play-button p{
+  color: white;
+}
+
+.brand-play-button button{
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  margin-right: 2rem;
+  font-weight: 500;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
