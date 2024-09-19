@@ -1,15 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./screen/HomeScreen";
-
+import "./output.css";
+import { Home, Detail } from "./pages";
+import { AppProvider } from "./component/provider/AppProvider";
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    <AppProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/detail" element={<Detail />} />
+        </Routes>
+      </Router>
+    </AppProvider>
   );
 }
 
